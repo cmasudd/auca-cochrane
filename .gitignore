@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+
+# Configuración protegida
+.env
+.env.*
+!.env.example
+
+# Logs y temporales del publicador
+*.log
+*.tmp
+*.bak
+*.orig
+*~
+data/**/*.tmp
+
+# Archivos de trabajo no publicados
+*.docx
+*.odt
+*.xlsx
+*.pptx
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db

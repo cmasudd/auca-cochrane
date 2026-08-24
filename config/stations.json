@@ -1,0 +1,30 @@
+[
+  {
+    "device_id": 241,
+    "code": "HIRI-AUCA-1",
+    "name": "AUCA 1",
+    "location": "Cochrane",
+    "variables": ["pm1", "pm25", "pm10", "temp", "hum", "temp_internal", "hum_internal", "relay", "signal"]
+  },
+  {
+    "device_id": 242,
+    "code": "HIRI-AUCA-2",
+    "name": "AUCA 2",
+    "location": "Cochrane",
+    "variables": ["pm1", "pm25", "pm10", "temp", "hum", "temp_internal", "hum_internal", "relay", "signal"]
+  },
+  {
+    "device_id": 243,
+    "code": "HIRI-AUCA-3",
+    "name": "AUCA 3",
+    "location": "Cochrane",
+    "variables": ["pm1", "pm25", "pm10", "temp", "hum", "temp_internal", "hum_internal", "relay", "signal"]
+  },
+  {
+    "device_id": 244,
+    "code": "HIRI-AUCA-4",
+    "name": "AUCA 4",
+    "location": "Cochrane",
+    "variables": ["pm1", "pm25", "pm10", "temp", "hum", "temp_internal", "hum_internal", "relay", "signal"]
+  }
+]

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plataforma de datos ambientales AUCA Cochrane.">
+  <meta name="theme-color" content="#103b3a">
+  <title>AUCA Cochrane | Monitoreo ambiental</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="AUCA Cochrane, inicio">
+      <span class="brand-mark" aria-hidden="true">A</span>
+      <span>
+        <strong>AUCA</strong>
+        <small>Cochrane</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#estaciones">Estaciones</a>
+      <a href="#historicos">Históricos</a>
+      <a href="#proyecto">Proyecto</a>
+    </nav>
+    <div class="header-status" id="header-status" aria-live="polite">
+      <span class="status-dot"></span>
+      <span>Conectando</span>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Plataforma ambiental</p>
+        <h1>Datos de calidad del aire para <span>Cochrane</span></h1>
+        <p class="hero-lead">
+          Consulta material particulado y condiciones ambientales de cuatro
+          estaciones AUCA. Los históricos se publican como archivos abiertos y
+          se actualizan cada hora.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#historicos">Explorar datos</a>
+          <a class="button button-quiet" href="#proyecto">Conocer el proyecto</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Estado general de la red">
+        <p class="panel-label">Estado de la red</p>
+        <strong class="network-number" id="network-number">4</strong>
+        <span>estaciones configuradas</span>
+        <dl class="network-meta">
+          <div>
+            <dt>Última medición</dt>
+            <dd id="network-updated">Cargando…</dd>
+          </div>
+          <div>
+            <dt>Publicación</dt>
+            <dd>CSV cada hora</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section" id="estaciones">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Lectura reciente</p>
+          <h2>Estaciones AUCA</h2>
+        </div>
+        <p>
+          Los nombres, fotografías y ubicaciones validadas se incorporarán en
+          una siguiente etapa. Por ahora se utiliza el identificador AUCA.
+        </p>
+      </div>
+      <div class="station-grid" id="station-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="section explorer-section" id="historicos">
+      <div class="section-heading explorer-heading">
+        <div>
+          <p class="eyebrow">Históricos abiertos</p>
+          <h2>Explora una variable</h2>
+        </div>
+        <p id="data-availability">Consultando archivos disponibles…</p>
+      </div>
+
+      <div class="explorer-layout">
+        <aside class="control-panel" aria-label="Filtros del gráfico">
+          <label for="station-select">Estación</label>
+          <select id="station-select"></select>
+
+          <label for="variable-select">Variable</label>
+          <select id="variable-select"></select>
+
+          <fieldset>
+            <legend>Período</legend>
+            <div class="period-grid" id="period-grid">
+              <button type="button" data-period="24h">24 horas</button>
+              <button type="button" data-period="7d" class="is-active">7 días</button>
+              <button type="button" data-period="30d">30 días</button>
+              <button type="button" data-period="total">Todo</button>
+            </div>
+          </fieldset>
+
+          <button class="button button-primary download-trigger" id="download-trigger" type="button">
+            Descargar selección CSV
+          </button>
+          <p class="control-note">
+            La descarga respeta la estación, variable y período seleccionados.
+          </p>
+        </aside>
+
+        <div class="chart-panel">
+          <div class="chart-toolbar">
+            <div>
+              <p class="chart-kicker" id="chart-station">AUCA 1</p>
+              <h3 id="chart-title">Material particulado PM2.5</h3>
+            </div>
+            <span class="data-state" id="chart-state">Cargando…</span>
+          </div>
+
+          <div class="stats-grid" aria-label="Estadísticas del período">
+            <article>
+              <span>Mínimo</span>
+              <strong id="stat-min">—</strong>
+            </article>
+            <article>
+              <span>Promedio</span>
+              <strong id="stat-avg">—</strong>
+            </article>
+            <article>
+              <span>Máximo</span>
+              <strong id="stat-max">—</strong>
+            </article>
+            <article>
+              <span>Registros</span>
+              <strong id="stat-count">—</strong>
+            </article>
+          </div>
+
+          <div class="chart-wrap" id="chart-wrap">
+            <canvas id="history-chart" aria-label="Gráfico histórico" role="img"></canvas>
+            <div class="empty-state" id="chart-empty" hidden>
+              No hay mediciones disponibles para esta selección.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-section" id="proyecto">
+      <div>
+        <p class="eyebrow">Sobre esta versión</p>
+        <h2>Una base preparada para crecer</h2>
+      </div>
+      <div class="project-copy">
+        <p>
+          Esta primera versión separa estructura, estilos, configuración,
+          acceso a datos, gráficos y descargas. Así se pueden incorporar
+          identidad visual, fotografías, nombres y ubicaciones sin rehacer el
+          sistema de publicación.
+        </p>
+        <p>
+          Los datos son informativos y deben interpretarse junto con la
+          metodología, mantenimiento y condiciones de cada sensor. No sustituyen
+          mediciones regulatorias ni recomendaciones de salud de la autoridad.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Plataforma AUCA Cochrane</p>
+    <p>Datos abiertos en etapa inicial · Chile</p>
+  </footer>
+
+  <dialog class="download-dialog" id="download-dialog">
+    <form method="dialog">
+      <button class="dialog-close" value="cancel" aria-label="Cerrar">×</button>
+      <p class="eyebrow">Antes de descargar</p>
+      <h2>Uso responsable de los datos</h2>
+      <p>
+        Estas mediciones son informativas y pueden contener interrupciones,
+        valores pendientes de validación o cambios asociados al mantenimiento
+        de sensores. Conserva la fecha, unidad, estación y procedencia al
+        reutilizarlas.
+      </p>
+      <div class="dialog-actions">
+        <button class="button button-quiet" value="cancel">Volver</button>
+        <button class="button button-primary" id="confirm-download" value="default">
+          Descargar CSV
+        </button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="assets/vendor/chart.umd-4.4.1.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-24T16:15:20-04:00",
+  "timezone": "America/Santiago",
+  "max_csv_bytes": 41943040,
+  "variables": {
+    "pm1": {
+      "column": "pm1_ugm3",
+      "label": "Material particulado PM1",
+      "shortLabel": "PM1",
+      "unit": "µg/m³",
+      "color": "#75b8c2",
+      "decimals": 0,
+      "category": "ambiente"
+    },
+    "pm25": {
+      "column": "pm25_ugm3",
+      "label": "Material particulado PM2.5",
+      "shortLabel": "PM2.5",
+      "unit": "µg/m³",
+      "color": "#1f5d58",
+      "decimals": 0,
+      "category": "ambiente"
+    },
+    "pm10": {
+      "column": "pm10_ugm3",
+      "label": "Material particulado PM10",
+      "shortLabel": "PM10",
+      "unit": "µg/m³",
+      "color": "#e3a83c",
+      "decimals": 0,
+      "category": "ambiente"
+    },
+    "temp": {
+      "column": "temperatura_c",
+      "label": "Temperatura ambiental",
+      "shortLabel": "Temperatura",
+      "unit": "°C",
+      "color": "#b94b3d",
+      "decimals": 1,
+      "category": "ambiente"
+    },
+    "hum": {
+      "column": "humedad_pct",
+      "label": "Humedad ambiental",
+      "shortLabel": "Humedad",
+      "unit": "%",
+      "color": "#4f86a6",
+      "decimals": 1,
+      "category": "ambiente"
+    },
+    "temp_internal": {
+      "column": "temperatura_interna_c",
+      "label": "Temperatura interna del equipo",
+      "shortLabel": "Temp. interna",
+      "unit": "°C",
+      "color": "#9d5f37",
+      "decimals": 1,
+      "category": "operacion"
+    },
+    "hum_internal": {
+      "column": "humedad_interna_pct",
+      "label": "Humedad interna del equipo",
+      "shortLabel": "Hum. interna",
+      "unit": "%",
+      "color": "#7a6ca8",
+      "decimals": 1,
+      "category": "operacion"
+    },
+    "relay": {
+      "column": "relay",
+      "label": "Estado del calefactor",
+      "shortLabel": "Calefactor",
+      "unit": "estado",
+      "color": "#8dad6a",
+      "decimals": 0,
+      "category": "operacion"
+    },
+    "signal": {
+      "column": "senal",
+      "label": "Señal telefónica",
+      "shortLabel": "Señal",
+      "unit": "nivel",
+      "color": "#486a68",
+      "decimals": 0,
+      "category": "operacion"
+    }
+  },
+  "stations": [
+    {
+      "device_id": 241,
+      "code": "HIRI-AUCA-1",
+      "name": "AUCA 1",
+      "location": "Cochrane",
+      "variables": [
+        "pm1",
+        "pm25",
+        "pm10",
+        "temp",
+        "hum",
+        "temp_internal",
+        "hum_internal",
+        "relay",
+        "signal"
+      ],
+      "latest_at": "2026-08-24T16:14:34-04:00",
+      "months": {
+        "2026-07": [
+          "data/HIRI-AUCA-1/2026-07-part-001.csv"
+        ],
+        "2026-08": [
+          "data/HIRI-AUCA-1/2026-08-part-001.csv"
+        ]
+      }
+    },
+    {
+      "device_id": 242,
+      "code": "HIRI-AUCA-2",
+      "name": "AUCA 2",
+      "location": "Cochrane",
+      "variables": [
+        "pm1",
+        "pm25",
+        "pm10",
+        "temp",
+        "hum",
+        "temp_internal",
+        "hum_internal",
+        "relay",
+        "signal"
+      ],
+      "latest_at": "2026-08-24T16:14:56-04:00",
+      "months": {
+        "2026-07": [
+          "data/HIRI-AUCA-2/2026-07-part-001.csv"
+        ],
+        "2026-08": [
+          "data/HIRI-AUCA-2/2026-08-part-001.csv"
+        ]
+      }
+    },
+    {
+      "device_id": 243,
+      "code": "HIRI-AUCA-3",
+      "name": "AUCA 3",
+      "location": "Cochrane",
+      "variables": [
+        "pm1",
+        "pm25",
+        "pm10",
+        "temp",
+        "hum",
+        "temp_internal",
+        "hum_internal",
+        "relay",
+        "signal"
+      ],
+      "latest_at": "2026-08-24T16:14:38-04:00",
+      "months": {
+        "2026-07": [
+          "data/HIRI-AUCA-3/2026-07-part-001.csv"
+        ],
+        "2026-08": [
+          "data/HIRI-AUCA-3/2026-08-part-001.csv"
+        ]
+      }
+    },
+    {
+      "device_id": 244,
+      "code": "HIRI-AUCA-4",
+      "name": "AUCA 4",
+      "location": "Cochrane",
+      "variables": [
+        "pm1",
+        "pm25",
+        "pm10",
+        "temp",
+        "hum",
+        "temp_internal",
+        "hum_internal",
+        "relay",
+        "signal"
+      ],
+      "latest_at": "2026-08-24T16:15:20-04:00",
+      "months": {
+        "2026-07": [
+          "data/HIRI-AUCA-4/2026-07-part-001.csv"
+        ],
+        "2026-08": [
+          "data/HIRI-AUCA-4/2026-08-part-001.csv"
+        ]
+      }
+    }
+  ]
+}

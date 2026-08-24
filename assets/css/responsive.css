@@ -1,0 +1,152 @@
+@media (max-width: 980px) {
+  .site-header {
+    grid-template-columns: 1fr auto;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 44px;
+    min-height: auto;
+  }
+
+  .hero-panel {
+    max-width: 560px;
+  }
+
+  .station-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .explorer-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .control-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 18px;
+  }
+
+  .control-panel fieldset,
+  .download-trigger,
+  .control-note {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 680px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  .section,
+  .hero {
+    width: min(calc(100% - 28px), var(--page-width));
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .site-header {
+    padding: 0 14px;
+  }
+
+  .header-status span:last-child {
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .hero {
+    padding: 54px 0 70px;
+  }
+
+  h1 {
+    font-size: clamp(2.8rem, 14vw, 4.2rem);
+  }
+
+  .hero-actions {
+    display: grid;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .hero-panel {
+    padding: 28px;
+  }
+
+  .section-heading,
+  .project-section {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .station-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .explorer-section {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .control-panel {
+    display: block;
+  }
+
+  .chart-panel {
+    padding: 18px;
+  }
+
+  .chart-toolbar {
+    display: block;
+  }
+
+  .data-state {
+    display: inline-block;
+    margin-top: 12px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .chart-wrap,
+  .chart-wrap canvas {
+    min-height: 320px;
+    height: 320px !important;
+  }
+
+  .site-footer {
+    display: block;
+  }
+
+  .site-footer p + p {
+    margin-top: 6px;
+  }
+
+  .dialog-actions {
+    display: grid;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
