@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-31T04:16:59-04:00",
+  "updated_at": "2026-08-31T05:17:00-04:00",
   "timezone": "America/Santiago",
   "max_csv_bytes": 41943040,
   "variables": {
@@ -181,7 +181,7 @@
         "relay",
         "signal"
       ],
-      "latest_at": "2026-08-31T04:16:59-04:00",
+      "latest_at": "2026-08-31T05:17:00-04:00",
       "months": {
         "2026-07": [
           "data/HIRI-AUCA-4/2026-07-part-001.csv"
