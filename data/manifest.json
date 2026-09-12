@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-12T11:16:49-03:00",
+  "updated_at": "2026-09-12T12:16:50-03:00",
   "timezone": "America/Santiago",
   "max_csv_bytes": 41943040,
   "variables": {
@@ -103,7 +103,7 @@
         "relay",
         "signal"
       ],
-      "latest_at": "2026-09-12T11:16:49-03:00",
+      "latest_at": "2026-09-12T12:16:50-03:00",
       "months": {
         "2026-07": [
           "data/HIRI-AUCA-1/2026-07-part-001.csv"
@@ -132,7 +132,7 @@
         "relay",
         "signal"
       ],
-      "latest_at": "2026-09-12T11:12:47-03:00",
+      "latest_at": "2026-09-12T12:12:47-03:00",
       "months": {
         "2026-07": [
           "data/HIRI-AUCA-2/2026-07-part-001.csv"
@@ -161,7 +161,7 @@
         "relay",
         "signal"
       ],
-      "latest_at": "2026-09-12T11:15:02-03:00",
+      "latest_at": "2026-09-12T12:15:03-03:00",
       "months": {
         "2026-07": [
           "data/HIRI-AUCA-3/2026-07-part-001.csv"
@@ -190,7 +190,7 @@
         "relay",
         "signal"
       ],
-      "latest_at": "2026-09-12T11:15:19-03:00",
+      "latest_at": "2026-09-12T12:15:20-03:00",
       "months": {
         "2026-07": [
           "data/HIRI-AUCA-4/2026-07-part-001.csv"
