@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-16T16:14:56-03:00",
+  "updated_at": "2026-09-16T17:14:56-03:00",
   "timezone": "America/Santiago",
   "max_csv_bytes": 41943040,
   "variables": {
@@ -103,7 +103,7 @@
         "relay",
         "signal"
       ],
-      "latest_at": "2026-09-16T16:13:53-03:00",
+      "latest_at": "2026-09-16T17:13:53-03:00",
       "months": {
         "2026-07": [
           "data/HIRI-AUCA-1/2026-07-part-001.csv"
@@ -161,7 +161,7 @@
         "relay",
         "signal"
       ],
-      "latest_at": "2026-09-16T16:14:56-03:00",
+      "latest_at": "2026-09-16T17:14:56-03:00",
       "months": {
         "2026-07": [
           "data/HIRI-AUCA-3/2026-07-part-001.csv"
@@ -190,7 +190,7 @@
         "relay",
         "signal"
       ],
-      "latest_at": "2026-09-16T16:12:12-03:00",
+      "latest_at": "2026-09-16T17:12:12-03:00",
       "months": {
         "2026-07": [
           "data/HIRI-AUCA-4/2026-07-part-001.csv"
