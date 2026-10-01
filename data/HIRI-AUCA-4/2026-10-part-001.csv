@@ -1,0 +1,4 @@
+fecha,pm1_ugm3,pm25_ugm3,pm10_ugm3,temperatura_c,humedad_pct,temperatura_interna_c,humedad_interna_pct,relay,senal
+2026-10-01 00:03:53,12,19,21,30.3,22.9,32.6,20.9,0,16
+2026-10-01 00:08:53,10,24,25,30.3,23,32.7,21.1,0,15
+2026-10-01 00:13:53,12,20,23,30.3,22.7,32.6,20.8,0,17
