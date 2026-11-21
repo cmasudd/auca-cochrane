@@ -1,5 +1,7 @@
 # Plataforma AUCA Cochrane
 
+[Visitar el sitio web](https://cmasudd.github.io/auca-cochrane/)
+
 Sitio estático para consultar y descargar datos ambientales de los dispositivos
 AUCA 1 a AUCA 4. La web se publica con GitHub Pages y los datos se extraen del
 MariaDB local una vez por hora.
